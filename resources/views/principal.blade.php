@@ -14,21 +14,21 @@
       <div class="carousel-item active bg-warning">
         <img src="img/border hacker book.jpg" class="d-block col-md-9 mx-auto d-block" alt="Kali Linux">
         <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
+          <h5>Border Hacker</h5>
           <p>Some representative placeholder content for the first slide.</p>
         </div>
       </div>
       <div class="carousel-item bg-danger">
         <img src="img/kali linux.png" class="d-block col-md-4 mx-auto d-block" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
+        <div class="carousel-caption d-none d-md-block" style="color: black">
+          <h5>Kali Linux</h5>
           <p>Some representative placeholder content for the second slide.</p>
         </div>
       </div>
       <div class="carousel-item">
         <img src="img/pentesting con foca.png" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
+          <h5>Pentesting con Foca</h5>
           <p>Some representative placeholder content for the third slide.</p>
         </div>
       </div>

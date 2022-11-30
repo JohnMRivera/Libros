@@ -4,20 +4,21 @@
 
 @section('contenido')
 
-@if(session()->has('confirmacion'))    
+@if(session()->has('confirmacion'))
 
     {!!
-        '<script>
+
+        "<script>
         Swal.fire({
-          position: "center",
-          icon: "success",
-          title: "El libro ' . session()->get('confirmacion') . ' ha sido guardado correctamente",
+          position: 'center',
+          icon: 'success',
+          title: 'El libro " . session()->get('confirmacion') . " ha sido registrado correctamente',
           showConfirmButton: false,
           timer: 1600
         })
-    </script>'
+        </script>"
     !!}
-    
+
 @endif
 
     <div class="container col-md-5">
