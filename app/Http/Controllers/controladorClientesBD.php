@@ -49,7 +49,7 @@ class controladorClientesBD extends Controller
             'updated_at' => Carbon::now(),
         ]);
 
-        return redirect()->route('cliente.create')->with('registrado','Cliente registrado');
+        return redirect()->route('cliente.index')->with('registrado','Cliente registrado');
     }
 
     /**

@@ -19,18 +19,19 @@ class ControladorVistas extends Controller
     public function procesarLibro(ValidadorLibros $request){
         $titulo = $_POST['txtTitulo'];
 
-        $request->validate([
-            "txtISBN" => "numeric",
-            "txtTitulo" => "required",
-            "txtPaginas" => "numeric",
-            "txtEmailEditorial" => "email"
-        ]);
+        // $request->validate([
+        //     "txtISBN" => "numeric",
+        //     "txtTitulo" => "required",
+        //     "txtPaginas" => "numeric",
+        //     "txtEmailEditorial" => "email"
+        // ]);
 
         // $validado = $request->validated();
         // $validado = $request->safe()->only(['txtEmailEditorial','email']);
         // $validado = $request->safe()->except(['txtEmailEditorial','email']);
 
         return redirect()->route('reglib')->with('confirmacion', $titulo);
+        // return view('registro_libros', compact('titulo'))->with("confirmacion");
     }
 
     // public function validador(){
