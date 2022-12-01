@@ -40,13 +40,22 @@
                                 {{ $errors->first('txtINE') }}
                             </strong>
                         @endif
-                        <div>
+                        <div class="mb-3">
                             <label class="form-label" for="">Correo</label>
                             <input type="text" class="form-control" name="txtCorreo" value="{{ $cliente->correo }}">
                         </div>
                         @if($errors->first('txtCorreo'))
                         <strong class="text-danger">
                             {{ $errors->first('txtCorreo') }}
+                        </strong>
+                        @endif
+                        <div>
+                            <label class="form-label" for="">Contra</label>
+                            <input type="text" class="form-control" name="txtContra" value="{{ $cliente->contra }}">
+                        </div>
+                        @if($errors->first('txtContra'))
+                        <strong class="text-danger">
+                            {{ $errors->first('txtContra') }}
                         </strong>
                         @endif
                     </div>
