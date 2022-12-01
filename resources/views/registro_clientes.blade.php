@@ -75,7 +75,9 @@
                 </div>
                 <div class="card-footer text-muted">
                     {{-- <a href="{{route('log')}}" class="btn btn-primary">Ya tienes cuenta!</a> --}}
-                    <button type="submit" class="btn btn-danger mt-2 mb-2">Registrar Cuenta</button>
+                    <button type="submit" class="btn btn-danger mt-2 mb-2">Registrar Cuenta
+                        <i class="bi bi-person-add"></i>
+                    </button>
                 </div>
             </form>
         </div>
