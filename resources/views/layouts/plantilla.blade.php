@@ -7,6 +7,8 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
     <title> @yield('titulo_documento') </title>
@@ -31,7 +33,16 @@
                     <a class="nav-link text-light fs-5" aria-current="page" href=" {{ route('pri') }} ">Principal</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light fs-5" href=" {{ route('reglib') }} ">Registrar Libro</a>
+                    <a class="nav-link text-light fs-5" href=" {{ route('libro.create') }} ">Registrar Libro</a>
+                  </li>
+                  <li class="var-item">
+                    <a class="nav-link text-light fs-5" href=" {{ route('libro.index') }} ">Libros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light fs-5" href=" {{ route('cliente.create') }} ">Registrar Cliente</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light fs-5" href=" {{ route('cliente.index') }} ">Clientes</a>
                   </li>
                 </ul>
               </div>
