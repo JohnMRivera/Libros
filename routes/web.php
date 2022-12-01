@@ -44,3 +44,17 @@ Route::controller(controladorClientesBD::class)->group(function(){
     Route::delete('cliente/{id}/destroy','destroy')->name('cliente.destroy');
 
 });
+
+Route::controller(controladorLibrosBD::class)->group(function(){
+    
+    Route::get('libro/create','create')->name('libro.create');
+
+    Route::post('libro/store','store')->name('libro.store');
+
+    Route::get('libro/index','index')->name('libro.index');
+
+    Route::put('libro/{id}/update','update')->name('libro.update');
+
+    Route::delete('libro/{id}/destroy','destroy')->name('libro.destroy');
+
+});
