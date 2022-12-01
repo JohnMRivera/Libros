@@ -45,11 +45,12 @@ class controladorClientesBD extends Controller
             'INE' => $request->input('txtINE'),
             'correo' => $request->input('txtCorreo'),
             'contra' => $request->input('txtContra'),
+            'fecha' => Carbon::now(),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
         ]);
 
-        return redirect()->route('cliente.index')->with('registrado','Cliente registrado');
+        return redirect()->route('cliente.create')->with('registrado','Cliente registrado');
     }
 
     /**

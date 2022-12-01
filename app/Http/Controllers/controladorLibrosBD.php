@@ -51,7 +51,7 @@ class controladorLibrosBD extends Controller
             'updated_at' => Carbon::now()
         ]);
 
-        return redirect('libro/create')->with('agregado', 'El libro ha sido agregado');
+        return redirect('libro/index')->with('agregado', 'El libro ha sido agregado');
     }
 
     /**
