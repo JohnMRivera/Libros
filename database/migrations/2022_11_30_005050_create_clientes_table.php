@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('correo');
             $table->string('contra');
             $table->string('INE');
+            $table->date('fecha');
             $table->timestamps();
         });
     }
